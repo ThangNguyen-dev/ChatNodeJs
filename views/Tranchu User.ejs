@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is test Nodejs</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/handleUsers.js"></script>
+    <link rel="stylesheet" href="/css/mess.css">
+
+</head>
+
+<body>
+    <div class="form_register container mt-5">
+        <div class="row">
+            <form class="m-auto">
+                <div class="mb-3">
+                    <label for="inputUsername" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="inputUsername">
+                </div>
+                <button type="button" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="messaging">
+        <div class="inbox_msg">
+            <div class="inbox_people">
+                <div class="headind_srch">
+                    <div class="recent_heading">
+                        <img src="https://sanjaymotels.com/wp-content/uploads/2019/01/testimony.png"
+                            style="height: 50px;" alt="Avatar"
+                            srcset="https://sanjaymotels.com/wp-content/uploads/2019/01/testimony.png">
+                        <span class="ml-2 fw-bolder UsserName">UsserName</span>
+                    </div>
+                    <div class="srch_bar">
+                        <div class="stylish-input-group">
+                            <input type="text" id="nameGroup" class="search-bar" placeholder="Search">
+                            <button type="button" id="createGroup" class="btn btn-info">Create Group</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="inbox_chat scroll">
+                    <!-- <div class="chat_list active_chat">
+                        <div class="chat_people">
+                            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                    alt="sunil"> </div>
+                            <div class="chat_ib">
+                                <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="mesgs">
+                <div class="msg_history">
+                    <div class="incoming_msg">
+                        <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png"
+                                alt="sunil">
+                        </div>
+                        <div class="received_msg">
+                            <div class="received_withd_msg">
+                                <p>Test which is a new approach to have all
+                                    solutions</p>
+                                <span class="time_date"> 11:01 AM | June 9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outgoing_msg">
+                        <div class="sent_msg">
+                            <p>Test which is a new approach to have all
+                                solutions</p>
+                            <span class="time_date"> 11:01 AM | June 9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="type_msg">
+                    <div class="input_msg_write">
+                        <input type="text" id="message" class="write_msg" placeholder="Type a message" />
+                        <button class="msg_send_btn" id="sendbtn" type="button">
+                            <img class="icon_sendMess"
+                                src="https://cdn4.iconfinder.com/data/icons/flat-circle-content/800/circle-content-send-512.png"
+                                alt=""
+                                srcset="https://cdn4.iconfinder.com/data/icons/flat-circle-content/800/circle-content-send-512.png" />
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End container div -->
+</body>
+
+</html>
